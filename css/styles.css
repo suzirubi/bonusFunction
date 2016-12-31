@@ -13,14 +13,14 @@
   text-align: center;
 }
 .jumbotron {
-  margin: 1em 2em;
   background-color: white;
   position: relative;
+  margin: 2em 5em;
 }
 .jumbotron h2 {
   font-family: 'Special Elite', cursive;
-  margin-bottom: 1em;
-  line-height: 2em;
+  margin: 2em 0em;
+  line-height: 1.75em;
 }
 
  .btn-danger {
@@ -42,11 +42,13 @@
   margin-top: 1em;
 }
 .btn-warning {
- padding: .25em .25em 0em .25em;
+ padding: .5em .5em 0em .5em;
  border: 1px solid yellow;
  border-radius: 6px;
  box-shadow: 1px 1px 2px black;
  color: red;
+ line-height: 1.75em;
+ margin-bottom: .5em;
 }
 #answer {
   display: none;
@@ -56,6 +58,7 @@
   margin-top: 1em;
   font-size: 1.5em;
   color: red;
+  margin-bottom: 2em;
 }
 #originalButton {
   display: none;
@@ -65,6 +68,7 @@
   font-family: 'Special Elite', cursive;
   padding: .75em 1.5em;
   margin-top: 1em;
+  line-height: 2.5em;
 }
 #original {
   display: none;
@@ -75,7 +79,24 @@
   padding: .75em 1.5em;
   margin-top: 1em;
 }
+#showOriginal {
+    line-height: 2.5em;
+}
+.black {
+  color: black;
+}
 
-@media query {
-
+@media screen and (max-width: 900px) {
+  .container-fluid img {
+    width: 60vw;
+    padding: 0;
+    margin: 0 20vw;
+    text-align: center;
+  }
+  .jumbotron {
+    background-color: white;
+    position: relative;
+    margin: 1em 2em;
+    height: 30em;
+  }
 }

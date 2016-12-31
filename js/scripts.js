@@ -28,7 +28,7 @@ $(document).ready(function(){
     $("#answer").hide();
     $("#original").hide();
     $("#promptQuestion").hide();
-    $("#answer").prepend(reverseAnswer());
+    $("#answer").append(reverseAnswer());
     $("#original").prepend(answerPrompt);
   });
 
