@@ -1,0 +1,7 @@
+ .btn-success {
+  padding: .1em .25em;
+  border: 1px solid green;
+  border-radius: 6px;
+  text-transform: lowercase;
+  box-shadow: 1px 1px 2px black;
+}
