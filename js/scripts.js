@@ -1,6 +1,7 @@
 $(document).ready(function(){
+  $("#original").hide();
 
-  $("span").click(function(){
+  $("#prompt").click(function(){
 
     var answerPrompt = prompt("Please enter a sentence to be encyrpted below...");
 
@@ -23,9 +24,27 @@ $(document).ready(function(){
       return join;
     }
 
-    var encryptedAnswer = reverseAnswer();
+    $("#emergency").show();
+    $("#answer").hide();
+    $("#original").hide();
+    $("#promptQuestion").hide();
+    $("#answer").prepend(reverseAnswer());
+    $("#original").prepend(answerPrompt);
+  });
 
-    console.log(encryptedAnswer);
+
+  $("#showEncrypt").click(function(){
+    $("#emergency").text("");
+
+    $("#answer").show();
+    $("#originalButton").show();
+
+  });
+  $("#showOriginal").click(function(){
+    $("#originalButton").text("");
+
+    $("#original").show();
+
 
   });
 

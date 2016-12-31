@@ -4,13 +4,35 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One:400,700,900|Special+Elite" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <title>Bonus Function JQuery</title>
   </head>
-  <body class="jumbotron">
-    <h2>Please click <span class="btn-success">HERE</span> to start encryption...</h2>
+  <body>
+    <div class="container-fluid">
+      <img src="img/logo.png" alt="secret sentence man logo" />
 
+      <div class="jumbotron">
+        <div id="promptQuestion">
+          <h2>Quickly! Click <span id="prompt" class="btn-danger">here</span> to encode your secret sentence...</h2>
+        </div>
+        <div id="emergency" class="ltrspace">
+          <button id="showEncrypt" type="button" class="btn-warning">EMERGENCY ONLY!</button> < Access encyrpted sentence
+        </div>
+        <div id="answer" class="ltrspace">
+
+        </div>
+        <div id="original">
+
+        </div>
+        <div id="originalButton">
+          <button id="showOriginal" type="button" class="btn-warning">Original Secret Sentence</button> < You forgot?!!
+        </div>
+
+      </div>
+
+    </div>
 
   </body>
 </html>

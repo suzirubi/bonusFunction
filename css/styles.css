@@ -1,7 +1,81 @@
- .btn-success {
-  padding: .1em .25em;
-  border: 1px solid green;
+.container-fluid {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/lightning.jpg");
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-fluid img {
+  width: 30vw;
+  padding: 0;
+  margin: 0 35vw;
+  text-align: center;
+}
+.jumbotron {
+  margin: 1em 2em;
+  background-color: white;
+  position: relative;
+}
+.jumbotron h2 {
+  font-family: 'Special Elite', cursive;
+  margin-bottom: 1em;
+  line-height: 2em;
+}
+
+ .btn-danger {
+  padding: .25em .25em 0em .25em;
+  border: 1px solid red;
   border-radius: 6px;
-  text-transform: lowercase;
   box-shadow: 1px 1px 2px black;
+}
+.ltrspace button{
+  letter-spacing: .15em;
+}
+#emergency {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: 'Special Elite', cursive;
+  padding: .75em 1.5em;
+  margin-top: 1em;
+}
+.btn-warning {
+ padding: .25em .25em 0em .25em;
+ border: 1px solid yellow;
+ border-radius: 6px;
+ box-shadow: 1px 1px 2px black;
+ color: red;
+}
+#answer {
+  display: none;
+  position: relative;
+  font-family: 'Special Elite', cursive;
+  padding: .75em 1.5em;
+  margin-top: 1em;
+  font-size: 1.5em;
+  color: red;
+}
+#originalButton {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: 'Special Elite', cursive;
+  padding: .75em 1.5em;
+  margin-top: 1em;
+}
+#original {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: 'Special Elite', cursive;
+  padding: .75em 1.5em;
+  margin-top: 1em;
+}
+
+@media query {
+
 }
